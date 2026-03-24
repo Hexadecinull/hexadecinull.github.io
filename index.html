@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecinull</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" as="font" href="assets/fonts/mojangles.ttf" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="music-player">
+        <audio id="bg-audio" loop src="music.mp3"></audio>
+        <button id="music-toggle" aria-label="Toggle music">
+            <i class="fa-solid fa-play" id="music-icon"></i>
+        </button>
+        <span class="music-label">♪ Soundtrack</span>
+    </div>
+    <div class="main-container">
+        <header>
+            <div class="header-title">
+                <img src="assets/favicon.ico" alt="Logo" class="site-logo">
+                <h1>Hexadecinull</h1>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle color theme">
+                <i id="theme-icon" class="fa-solid fa-moon"></i>
+            </button>
+            <p class="subtitle">Open source software &amp; tools.</p>
+            <div class="socials">
+                <a href="https://github.com/Hexadecinull" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </header>
+        <main>
+            <section class="repo-section">
+                <h2>Projects <span id="repo-count" class="section-count"></span></h2>
+                <div id="repo-list" class="repo-list"></div>
+            </section>
+
+            <section class="repo-section">
+                <h2>Websites <span id="websites-count" class="section-count"></span></h2>
+                <div id="websites-list" class="repo-list"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Hexadecinull. | <a href="404.html">Broken link?</a></p>
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
